@@ -1,0 +1,170 @@
+.plan-viewer {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.plan-viewer-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.sheet-stats {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sheet-stats .separator {
+  color: #ccc;
+}
+
+.canvas-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.canvas-container canvas {
+  display: block;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.polygon-details-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.details-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.type-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.type-badge.building {
+  background: rgba(200, 0, 0, 0.2);
+  color: rgb(150, 0, 0);
+}
+
+.type-badge.concrete {
+  background: rgba(128, 128, 128, 0.2);
+  color: rgb(80, 80, 80);
+}
+
+.type-badge.asphalt {
+  background: rgba(50, 50, 50, 0.3);
+  color: rgb(30, 30, 30);
+}
+
+.type-badge.pervious {
+  background: rgba(0, 200, 0, 0.2);
+  color: rgb(0, 120, 0);
+}
+
+.details-body {
+  margin-bottom: 15px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #555;
+}
+
+.detail-row .value {
+  color: #2c3e50;
+}
+
+.review-warning {
+  margin-top: 15px;
+  padding: 12px;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+}
+
+.review-warning strong {
+  display: block;
+  color: #856404;
+  margin-bottom: 8px;
+}
+
+.review-warning ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #856404;
+}
+
+.review-warning li {
+  margin: 4px 0;
+}
+
+.close-details-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-details-btn:hover {
+  background: #0056b3;
+}
+
+/* Legend component styles will be added separately */
